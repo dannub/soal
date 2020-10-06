@@ -1,0 +1,3 @@
+select u.email, u,password,p,nama,p.alamat,j.jabatan,j.masa_jabatan
+FROM user AS u, profile AS p, jabatan AS j
+WHERE u.profile_id=p.id AND u.jabatan_id=j.kode_jabatan;
